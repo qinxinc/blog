@@ -1,0 +1,138 @@
+2020-04-09 13:32:50,487 [Thread-2:25476] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\qinxincheng\PycharmProjects\blog_project\blog\views.py", line 26, in index
+    return render(request, 'index.html')
+  File "D:\env\tracer\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\env\tracer\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\env\tracer\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\env\tracer\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "f:\python3.6.8\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\env\tracer\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes 0 positional arguments but 1 was given
+2020-04-09 13:32:57,154 [Thread-5:27876] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "D:\env\tracer\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "D:\env\tracer\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "D:\env\tracer\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\env\tracer\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "f:\python3.6.8\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\env\tracer\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes 0 positional arguments but 1 was given
+2020-04-09 13:33:24,608 [Thread-2:22092] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\qinxincheng\PycharmProjects\blog_project\blog\views.py", line 26, in index
+    return render(request, 'index.html')
+  File "D:\env\tracer\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\env\tracer\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\env\tracer\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\env\tracer\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "f:\python3.6.8\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\env\tracer\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes 0 positional arguments but 1 was given
+2020-04-09 13:34:07,461 [Thread-3:25568] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\qinxincheng\PycharmProjects\blog_project\blog\views.py", line 28, in index
+    #     logger.error(e)
+  File "D:\env\tracer\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\env\tracer\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\env\tracer\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\env\tracer\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "f:\python3.6.8\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\env\tracer\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes 0 positional arguments but 1 was given
+2020-04-09 13:34:41,117 [Thread-2:28584] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\qinxincheng\PycharmProjects\blog_project\blog\views.py", line 28, in index
+    return render(request, 'index.html')
+  File "D:\env\tracer\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\env\tracer\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\env\tracer\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\env\tracer\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "f:\python3.6.8\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\env\tracer\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes 0 positional arguments but 1 was given
+2020-04-09 13:38:01,373 [Thread-2:5064] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\tracer\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\qinxincheng\PycharmProjects\blog_project\blog\views.py", line 20, in index
+    return render(request, 'index.html')
+  File "D:\env\tracer\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\env\tracer\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\env\tracer\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\env\tracer\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "f:\python3.6.8\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\env\tracer\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes 0 positional arguments but 1 was given
+2020-04-09 13:51:03,094 [Thread-138:24072] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2020-04-09 13:51:40,787 [Thread-29:23856] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
