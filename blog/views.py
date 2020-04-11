@@ -38,20 +38,7 @@ def index(request):
         # 最新文章数据
         article_list = Article.objects.all()
         article_list = getPage(request, article_list)
-        # 文章归档
-        # 1、先要去获取到文章中有的 年份-月份  2015/06文章归档
-        # 使用values和distinct去掉重复数据（不可行）
-        # print Article.objects.values('date_publish').distinct()
-        # 直接执行原生sql呢？
-        # 第一种方式（不可行）
-        # archive_list =Article.objects.raw('SELECT id, DATE_FORMAT(date_publish, "%%Y-%%m") as col_date FROM blog_article ORDER BY date_publish')
-        # for archive in archive_list:
-        #     print archive
-        # 第二种方式（不推荐）
-        # cursor = connection.cursor()
-        # cursor.execute("SELECT DISTINCT DATE_FORMAT(date_publish, '%Y-%m') as col_date FROM blog_article ORDER BY date_publish")
-        # row = cursor.fetchall()
-        # print row
+
     except Exception as e:
         print(e)
         logger.error(e)
@@ -71,7 +58,6 @@ def archive(request):
 # 按标签查询对应的文章列表
 def tag(request):
     try:
-        # 同学们自己实现该功能
         pass
     except Exception as e:
         logger.error(e)
